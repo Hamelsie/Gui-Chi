@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="website icon" type="image/png" href="image/cat.png">
+    <link rel="icon" type="image/png" href="image/cat.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Happy New Year 2024</title>
     <style>
-        /* RESET */
+        /* RESET CSS */
         * {
             margin: 0;
             padding: 0;
@@ -16,79 +16,81 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
             overflow-x: hidden;
         }
 
         .box-slider {
             width: 100%;
+            position: relative;
         }
 
-        /* Slider 1 */
+        /* SLIDER 1 */
         .slider1 {
             position: relative;
             text-align: center;
-            overflow: hidden;
         }
 
         .slider1 img {
             width: 100%;
             height: auto;
-            object-fit: cover;
         }
 
         .happynewyear {
             position: absolute;
-            top: 20%;
+            top: 15%;
             left: 50%;
-            transform: translate(-50%, -20%);
+            transform: translate(-50%, -15%);
+            text-align: center;
             color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         .happynewyear span {
-            font-size: 2.5rem;
+            font-size: 3rem;
             display: block;
             margin-bottom: 10px;
         }
 
         .box-button {
             position: absolute;
-            bottom: 20%;
+            bottom: 15%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .box-button button {
-            padding: 10px 20px;
-            font-size: 1rem;
             background-color: #ff6f61;
-            color: #fff;
+            color: white;
+            padding: 10px 20px;
             border: none;
-            border-radius: 8px;
+            border-radius: 5px;
+            font-size: 1.2rem;
             cursor: pointer;
-            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
         }
 
         .box-button button:hover {
             background-color: #ff8566;
         }
 
-        /* Slider 3 */
+        /* SLIDER 3 */
         .slider3 {
             padding: 20px;
             text-align: center;
+            background-color: #fff;
         }
 
         .slider3 .content {
-            padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            line-height: 1.6;
+            padding: 20px;
+            background-color: #fffbf1;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
         }
 
         .slider3 h1 {
@@ -101,23 +103,24 @@
             font-size: 1rem;
             color: #333;
             text-align: justify;
+            line-height: 1.6;
         }
 
         .slider3 .fixedContent {
+            margin-top: 20px;
             text-align: right;
             font-style: italic;
-            color: #888;
-            margin-top: 20px;
+            color: #555;
         }
 
-        /* Responsive Design */
+        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .happynewyear span {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
             .box-button button {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 padding: 8px 15px;
             }
 
@@ -129,11 +132,21 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="box-slider">
-        <!-- Slider 1 -->
+        <!-- SLIDER 1 -->
         <div class="slider1">
             <img src="image/bgr.jpg" alt="Background">
             <div class="happynewyear">
@@ -147,7 +160,7 @@
             </div>
         </div>
 
-        <!-- Slider 3 -->
+        <!-- SLIDER 3 -->
         <div class="slider3">
             <div class="content">
                 <h1>&#129505; Gửi Na</h1>
@@ -165,8 +178,8 @@
         </div>
     </div>
 
-    <!-- Âm nhạc -->
-    <audio id="song" autoplay>
+    <!-- ÂM NHẠC -->
+    <audio id="song" autoplay loop>
         <source src="image/nhac.mp3" type="audio/mp3">
     </audio>
 </body>
