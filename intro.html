@@ -3,237 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="website icon" type="png" href="image/cat.png">
+    <link rel="website icon" type="image/png" href="image/cat.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="intro.css">
-    <title>Happy New Year 204</title>
+    <title>Happy New Year 2024</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        .box-slider {
+            width: 100%;
+        }
+
+        /* Slider 1 */
+        .slider1 {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .slider1 img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .happynewyear {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .happynewyear span {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .box-button {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box-button button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .box-button button:hover {
+            background-color: #ff8566;
+        }
+
+        /* Slider 3 */
+        .slider3 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slider3 .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+
+        .slider3 h1 {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .slider3 p {
+            font-size: 1rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .slider3 .fixedContent {
+            text-align: right;
+            font-style: italic;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .happynewyear span {
+                font-size: 1.5rem;
+            }
+
+            .box-button button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+
+            .slider3 h1 {
+                font-size: 1.5rem;
+            }
+
+            .slider3 p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="box-slider">
+        <!-- Slider 1 -->
         <div class="slider1">
-            <img src="image/bgr.jpg" alt="">
+            <img src="image/bgr.jpg" alt="Background">
             <div class="happynewyear">
-                <div class="textHappynewyear">
-                    <div class="box-span">
-                        <span></span>
-                    </div>
-                    <div class="box-span">
-                        <span></span>
-                    </div>
-                    <div class="box-span">
-                        <span></span>
-                    </div>
-                    <div class="box-span">
-                        <span></span>
-                    </div>
-                </div>
+                <span>Happy</span>
+                <span>New</span>
+                <span>Year</span>
+                <span>2024</span>
             </div>
             <div class="box-button">
-                <div class="button">
-                    <button>Ấn vào đây nè!</button>
-                    <span><i class="fa-solid fa-heart"></i></span>
-                </div>
-            </div>
-            <div class="box-slider_img1">
-                <div class="slider-img1">
-                    <img src="image/circular-pattern.png" alt="">
-                </div>
-                <div class="pattern">
-                    <img src="image/pattern.png" alt="">
-                </div>
-            </div>
-            <div class="circle">
-                <span></span>
-            </div>
-            <div class="box-flower">
-                <div class="flower-img">
-                    <img src="image/flower.png" alt="">
-                </div>
-                <div class="flower-img">
-                    <img src="image/flower.png" alt="">
-                </div>
-                <div class="flower-img">
-                    <img src="image/flower1.png" alt="">
-                </div>
-                <div class="flower-img">
-                    <img src="image/flower1.png" alt="">
-                </div>
-                <div class="flower-img">
-                    <img src="image/flower2.png" alt="">
-                </div>
-                <div class="flower-img">
-                    <img src="image/flower2.png" alt="">
-                </div>
-            </div>
-            <div class="box-slider_img2">
-                <div class="box-slider-img2">
-                    <div class="slider-img2">
-                        <img src="image/lanterns.png" alt="">
-                    </div>
-                </div>
-                <div class="box-slider-img3">
-                    <div class="slider-img3">
-                        <img src="image/lanterns.png" alt="">
-                    </div>
-                </div>
-                <div class="box-slider-img4">
-                    <div class="slider-img4">
-                        <img src="image/lanterns.png" alt="">
-                    </div>
-                </div>
-                <div class="box-slider-img5">
-                    <div class="slider-img5">
-                        <img src="image/lanterns.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="slider-img6">
-                <img src="image/cloud-red1.png" alt="">
-                <img src="image/cloud-red2.png" alt="">
-                <img src="image/cloud-red2.png" alt="">
-            </div>
-            <div class="box-lion_dance">
-                <div class="lion_dance1">
-                    <img src="image/Lion-dance.gif" alt="">
-                </div>
-                <div class="lion_dance2">
-                    <img src="image/Lion-dance2.gif" alt="">
-                </div>
-            </div>
-            <div class="cat">
-                <img src="image/cat.png" alt="">
-            </div>
-            <div class="box-number">
-                <div class="number2024">
-                    <div class="number">
-                        <span>2</span>
-                    </div>
-                    <div class="number">
-                        <span>0</span>
-                    </div>
-                    <div class="number">
-                        <span>2</span>
-                    </div>
-                    <div class="number">
-                        <span>4</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box-rim">
-                <div class="rim1">
-                    <img src="image/rim1.png" alt="">
-                </div>
-                <div class="rim2">
-                    <img src="image/rim1.png" alt="">
-                </div>
-            </div>
-            <div class="box-texture_clouds">
-                <div class="texture_clouds1">
-                    <img src="image/texture-clouds.png" alt="">
-                </div>
-                <div class="texture_clouds1">
-                    <img src="image/texture-clouds.png" alt="">
-                </div>
-                <div class="texture_clouds1">
-                    <img src="image/texture-clouds.png" alt="">
-                </div>
-                <div class="texture_clouds1">
-                    <img src="image/texture-clouds.png" alt="">
-                </div>
-                <div class="texture_clouds1">
-                    <img src="image/texture-clouds.png" alt="">
-                </div>
-            </div>
-            <div class="box-big_clouds">
-                <div class="big_clouds1">
-                    <img src="image/big-clouds1.png" alt="">
-                </div>
-                <div class="big_clouds2">
-                    <img src="image/big-clouds2.png" alt="">
-                </div>
-                <div class="big_clouds3">
-                    <img src="image/big-clouds3.png" alt="">
-                </div>
+                <button>Ấn vào đây nè! <i class="fa-solid fa-heart"></i></button>
             </div>
         </div>
-        <div class="slider2">
-            <div class="rhombus"></div>
-            <div class="rhombus"></div>
-            <div class="rhombus-img">
-                <img src="image/IMG_2063.JPG" alt="">
-            </div>
-            <div class="mail">
-                <button><i class="fa-regular fa-envelope"></i></button>
-                <span class="heart"><i class="fa-solid fa-heart"></i></span>
-            </div>
-        </div>
-        <div class="slider3">
-            <div class="box-content">
-                <div class="left">
-                    <img src="image/bg1.jpg" alt="">
-                    <div class="center">
 
-                    </div>
-                    <div class="lanterns-content">
-                        <img src="image/lanterns.png" alt="">
-                    </div>
-                    <div class="box-big_flowers">
-                        <img src="image/big-flower.png" alt="">
-                        <img src="image/big-flower.png" alt="">
-                        <img src="image/big-flower.png" alt="">
-                        <img src="image/big-flower1.png" alt="">
-                        <img src="image/big-flower1.png" alt="">
-                        <img src="image/big-flower2.png" alt="">
-                        <img src="image/big-flower2.png" alt="">
-                        <img src="image/big-flower2.png" alt="">
-                    </div>
-                    <div class="box-circle_left">
-                        <div class="circle_left">
-                            <img src="image/circular-pattern.png" alt="">
-                            <div class="text-content">
-                                <h2>Happy New</h2>
-                                <h1>Year</h1>
-                                <span>2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="apricot_blossom">
-                        <img src="image/apricot-blossom.png" alt="">
-                        <img src="image/apricot-blossom.png" alt="">
-                        <img src="image/apricot-blossom.png" alt="">
-                        <img src="image/apricot-blossom.png" alt="">
-                        <img src="image/apricot-blossom.png" alt="">
-                        <img src="image/apricot-blossom.png" alt="">
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="content">
-                        <div class="title">
-                            <h1>&#129505 Gửi Na</h1>
-                        </div>
-                        <p>Năm mới 2024 chúc chị nhiều sức khỏe
-                        lun vui vẻ và hạnh phúc. Dù như nào thì 
-                        em vẫn mong là chị sẽ nhận được những điều
-                        tốt đẹp. Năm nay mong là những dự định của 
-                        chị sẽ thành công và tốt đẹp.Tự tin về bản thân 
-                        hơn và biết iu thương người bên cạnh mình hơn nhé.
-                        Mong chị lun hạnh phúc với mọi sự lựa chọn của mình
-                        </p>
-                        <div class="fixedContent">
-                            <h3>Người gửi: Em gái🫶</h3>
-                        </div>
-                    </div>
+        <!-- Slider 3 -->
+        <div class="slider3">
+            <div class="content">
+                <h1>&#129505; Gửi Na</h1>
+                <p>
+                    Năm mới 2024 chúc chị nhiều sức khỏe, luôn vui vẻ và hạnh phúc.
+                    Dù như nào thì em vẫn mong là chị sẽ nhận được những điều tốt đẹp.
+                    Năm nay mong là những dự định của chị sẽ thành công và tốt đẹp.
+                    Tự tin về bản thân hơn và biết yêu thương người bên cạnh mình hơn nhé.
+                    Mong chị luôn hạnh phúc với mọi sự lựa chọn của mình.
+                </p>
+                <div class="fixedContent">
+                    <h3>Người gửi: Em gái 🫶</h3>
                 </div>
             </div>
-            <i class="fa-solid fa-xmark"></i>
         </div>
     </div>
 
-    <audio id="song"autoplay>
+    <!-- Âm nhạc -->
+    <audio id="song" autoplay>
         <source src="image/nhac.mp3" type="audio/mp3">
     </audio>
-
-<script src="intro.js"></script>
 </body>
 </html>
